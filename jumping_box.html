@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+
+    <title>jumping_box</title>
+<style>
+    #box {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        background: #6CB8E9;
+        justify-content: center;
+        text-align: center;
+        margin: -25px 0px 0px -25px;
+        animation: jump 2s infinite;
+        -moz-animation: jump 2s infinite ease-in-out;
+        -webkit-animation: jump 2s infinite ease-in-out;
+    }
+
+    .child {
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        /*Center Vertically and Horizontal*/
+        position: absolute;
+        /*transform: translate(-50%, -50%);*/
+        top: 50%;
+        left: 50%;
+        margin: -25px 0px 0px -25px;
+        -webkit-animation: colorchange 20s infinite;
+        animation: colorchange 20s infinite;
+        /*Apply Negative Top and Left margins to Truly Center the Element*/
+    }
+
+    @keyframes jump {
+        0% {
+            top: 0px;
+            background: #8ebf42;
+        }
+        50% {
+            top: 25px;
+            background: #e6ebef;
+        }
+        100% {
+            top: 100px;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            top: 610px;
+            background: #8ebf42;
+        }
+        50% {
+            top: 25px;
+            background: #e6ebef;
+        }
+        100% {
+            top: 610px;
+        }
+    }
+
+    @keyframes shadowSize {
+        0% {
+            width: 200px;
+            margin-left: 0px;
+            opacity: 1;
+            box-shadow: 200px 0 10px rgba(0, 0, 0, 0.7);
+        }
+        50% {
+            width: 150px;
+            margin-left: 25px;
+            opacity: 0.3;
+            box-shadow: 200px 0 30px rgba(0, 0, 0, 0.3);
+        }
+        100% {
+            width: 200px;
+            margin-left: 0px;
+            opacity: 1;
+            box-shadow: 200px 0 10px rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    @keyframes colorchange {
+        0% {
+            background: #8ebf42;
+        }
+        25% {
+            background: #e6ebef;
+        }
+        50% {
+            background: #1c87c9;
+        }
+        75% {
+            background: #095484;
+        }
+        100% {
+            background: #d0e2bc;
+        }
+    }
+
+    @keyframes colorchange {
+        0% {
+            background: #8ebf42;
+        }
+        25% {
+            background: #e6ebef;
+        }
+        50% {
+            background: #1c87c9;
+        }
+        75% {
+            background: #095484;
+        }
+        100% {
+            background: #d0e2bc;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+    <div>
+        <div id="box"></div>
+
+    </div>
+</body>
+
+</html>

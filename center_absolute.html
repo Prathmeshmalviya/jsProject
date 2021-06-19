@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+    <title>Vertical & Horizontal Center</title>
+
+<style>
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;*/
+    }
+
+    .child {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    /*Center Vertically and Horizontal*/
+    position: absolute;
+    /*transform: translate(-50%, -50%);*/
+    top: 50%;
+    left: 50%;
+    margin: -25px 0px 0px -25px;
+    -webkit-animation: colorchange 20s infinite;
+    animation: colorchange 20s infinite;
+    /*Apply Negative Top and Left margins to Truly Center the Element*/
+    }
+
+    @-webkit-keyframes colorchange {
+    0% {
+        background: #8ebf42;
+    }
+    25% {
+        background: #e6ebef;
+    }
+    50% {
+        background: #1c87c9;
+    }
+    75% {
+        background: #095484;
+    }
+    100% {
+        background: #d0e2bc;
+    }
+    }
+
+    @keyframes colorchange {
+    0% {
+        background: #8ebf42;
+    }
+    25% {
+        background: #e6ebef;
+    }
+    50% {
+        background: #1c87c9;
+    }
+    75% {
+        background: #095484;
+    }
+    100% {
+        background: #d0e2bc;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
